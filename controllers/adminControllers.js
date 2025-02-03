@@ -5,7 +5,6 @@ const Train = require('../models/Train');
 //Logic for add train by admin only 
 exports.addTrain = async (req, res) => {
     let trains = req.body; 
-    console.log(trains);
     if (!Array.isArray(trains)) {
       trains = [trains];
     }

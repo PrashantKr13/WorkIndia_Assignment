@@ -64,7 +64,6 @@ exports.getSeatAvailability = async (req, res) => {
 exports.bookSeat = async (req, res) => {
 
     const { trainId, seatsToBook } = req.body;
-    console.log(req.user.id);
     const userId = req.user.id;
   
     const connection = await db.getConnection();

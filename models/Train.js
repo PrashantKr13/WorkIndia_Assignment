@@ -35,8 +35,6 @@ exports.getTrainsByRoute = async (source, destination) => {
            `, [sourceFormatted, destinationFormatted]);
 
 
-
-        //console.log('Query result:', rows); // Log the query result
         return rows;
 
     } catch (err) {
